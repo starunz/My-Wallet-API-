@@ -1,4 +1,4 @@
-import signUpSchema from '../schemas/signUpSchema.js'
+import { signUpSchema } from '../schemas/signUpSchema.js'
 
 export function validateSignUp(req, res, next) {
   const user = req.body;

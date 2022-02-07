@@ -1,4 +1,4 @@
-import signInSchema from '../schemas/signInSchema.js'
+import { signInSchema } from '../schemas/signInSchema.js'
 
 export function validateSignIn(req, res, next) {
 
