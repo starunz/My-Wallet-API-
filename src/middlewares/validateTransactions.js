@@ -10,7 +10,7 @@ export function validateTransaction(req, res, next) {
   if (!validation.error) {
     next();
   } else {
-    const errors = validation.error.details.map((detail) => detail.message);
+    const errors = validation.error.details.map(detail => detail.message);
 
     return res.status(422).send(errors);
   }
