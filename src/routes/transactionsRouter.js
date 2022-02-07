@@ -9,7 +9,7 @@ const transactionsRouter = Router();
 
 transactionsRouter.use(validateToken);
 
-transactionsRouter.get('/transactions', transactions);
+transactionsRouter.get('/wallet', transactions);
 transactionsRouter.post('/add-entry',validateTransaction, addEntry);
 transactionsRouter.post('/add-exit',validateTransaction, addExit);
 
