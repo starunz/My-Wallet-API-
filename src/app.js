@@ -8,6 +8,6 @@ server.use(express.json());
 server.use(cors());
 server.use(router);
 
-server.listen(5000, () => {
+server.listen(process.env.PORT, () => {
     console.log('rodando')
 });
